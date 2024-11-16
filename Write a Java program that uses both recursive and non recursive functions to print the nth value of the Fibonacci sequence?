@@ -28,4 +28,9 @@ public class Main {
         System.out.println("Fibonacci number (Recursive) for n = " + n + " is: " + fibonacciRecursive(n));
         System.out.println("Fibonacci number (Non-Recursive) for n = " + n + " is: " + fibonacciNonRecursive(n));
     }
-}
+}  
+
+OUTPUT:
+Fibonacci number (Recursive) for n = 10 is: 55
+Fibonacci number (Non-Recursive) for n = 10 is: 55
+
