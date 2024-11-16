@@ -1,4 +1,4 @@
-public class Demo 
+public class Main
 {
    static boolean val1;
    static double val2;
@@ -16,3 +16,11 @@ public class Demo
       System.out.println("Val6 = " + val6);
    }
 }
+ OUTPUT:
+Default values.....
+Val1 = false
+Val2 = 0.0
+Val3 = 0.0
+Val4 = 0
+Val5 = 0
+Val6 = null
