@@ -5,4 +5,8 @@ public class Main
         float a = (float)5 / 2 * 10 / 3;
         System.out.println("The value of a is: " + a);
     }
-}
+}  
+
+OUTPUT:
+The value of a is: 8.333333
+
