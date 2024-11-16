@@ -38,3 +38,16 @@ public class Main {
         scanner.close();
     }
 }
+
+
+OUTPUT:
+Enter the number of elements in the list: 9 4
+Enter the elements of the list:
+3
+6
+9
+1
+Enter the element to search for: 6
+Element found at index: 1
+
+
