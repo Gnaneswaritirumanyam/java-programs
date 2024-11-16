@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class CheckInteger {
+    public static void main(String[] args)
+{
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter a number: ");
+        String input = scanner.nextLine();
+        try 
+        {
+            Integer.parseInt(input);
+            System.out.println("The entered value is an integer.");
+        } 
+catch (NumberFormatException e) 
+        {
+            System.out.println("The entered value is not an integer.");
+        }
+        scanner.close();
+    }
+}
