@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) 
+    {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the string: ");
+        String inputString = scanner.nextLine();
+        System.out.print("Enter the starting portion for the extracted string: ");
+        int start = scanner.nextInt();
+        System.out.print("Enter the ending portion for the extracted string: ");
+        int end = scanner.nextInt();
+        if (start < 0 || end > inputString.length() || start >= end)
+        {
+            System.out.println("Invalid range.");
+            return;
+        }
+        String extractedPortion = inputString.substring(start, end);
+        String remainingPortion = inputString.substring(0, start) + inputString.substring(end);
+        System.out.println("The extracted portion is: " + extractedPortion);
+        System.out.println("The remaining portion is: " + remainingPortion);
+    }
+}
+
+OUTPUT:
+Enter the string: This is a test
+Enter the starting portion for the extracted string: 4
+Enter the ending portion for the extracted string: 7
+The extracted portion is: is
+The remaining portion is: This a test
