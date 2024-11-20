@@ -1,0 +1,29 @@
+import java.util.HashSet;
+import java.util.Set;
+
+public class Main 
+{
+    static void printWords(Set<String> set) 
+    {
+        for (String word : set) 
+        {
+            System.out.println(word);
+        }
+    }
+    public static void main(String[] args) 
+    {
+        String str = "geeks for geeks";
+        Set<String> wordSet = new HashSet<>();
+        String[] words = str.split(" ");
+        for (String word : words) 
+        {
+            wordSet.add(word);
+        }
+        printWords(wordSet);
+    }
+}
+
+OUTPUT:
+
+geeks
+for
