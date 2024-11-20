@@ -1,0 +1,16 @@
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
+class Main
+{
+	public static void main(String Args[])
+	{
+		String t;
+		LocalTime lt = LocalTime.now();
+		DateTimeFormatter formatterLocalTime = DateTimeFormatter.ofPattern("HH:mm:ss");
+		t = formatterLocalTime.format(lt);
+		System.out.println("HH:mm:ss = " + t);
+	}
+}  
+
+OUTPUT:
+HH:mm:ss = 03:34:50
